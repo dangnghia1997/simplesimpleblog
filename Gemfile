@@ -66,3 +66,6 @@ gem 'jquery-rails'
 #Bs3
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'
+
+#Fake database
+gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
