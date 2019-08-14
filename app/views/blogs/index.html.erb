@@ -4,11 +4,14 @@
 					 <div class="content-grid-info">
 						 <img src="<%= image_path('post1.jpg') %>" alt=""/>
 						 <div class="post-info">
-						 <h4><a href="single.html"><%= blog.title %></a>  July 30, 2014 / 27 Comments</h4>
+						 <h4> <%= link_to blog.title, blog_path(blog) %>  <%= blog.created_at.strftime("%b  %d, %Y") %> / 27 Comments</h4>
 						 <p><%= blog.short_description %></p>
 						 <%= link_to "READ MORE", blog_path(blog) %>
 						 </div>
 					 </div>
 					<% end %>
 				 </div>
+				 <%= paginate @blogs %>
 			  </div>
+
+				

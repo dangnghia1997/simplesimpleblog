@@ -69,3 +69,6 @@ gem 'sassc-rails', '>= 2.1.0'
 
 #Fake database
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+#pagination 
+gem 'kaminari-core', '~> 1.1', '>= 1.1.1'
+gem 'kaminari'

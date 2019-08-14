@@ -1,11 +1,10 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show]
   def index
-    @blogs = Blog.all
+    @blogs = Blog.order(:title).page(params[:page]).per(3)
   end
 
   def show
-    
   end
 
   private
